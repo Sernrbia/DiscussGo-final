@@ -4,6 +4,7 @@
     <string name="nav_register">Register</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="repeatPassword">Repeat password</string>
     <string name="firstName">First name</string>
     <string name="lastName">Last name</string>
     <string name="logo">Logo</string>
