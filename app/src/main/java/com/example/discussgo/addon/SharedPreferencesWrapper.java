@@ -7,6 +7,8 @@ public class SharedPreferencesWrapper {
     private static SharedPreferencesWrapper ourInstance;
     private SharedPreferences sharedPreferences;
 
+    public static final String ACCESS_TOKEN_KEY = "token";
+
     public static SharedPreferencesWrapper getInstance() {
         return ourInstance;
     }
@@ -21,4 +23,17 @@ public class SharedPreferencesWrapper {
         sharedPreferences = context.getSharedPreferences("accessToken", Context.MODE_PRIVATE);
     }
 
+    public void putAccessToken(String token) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.putString(ACCESS_TOKEN_KEY, token);
+        editor.apply();
+
+    }
+
+    public String getAccessToken() {
+        return sharedPreferences.getString(ACCESS_TOKEN_KEY, "");
+
+
+    }
 }
