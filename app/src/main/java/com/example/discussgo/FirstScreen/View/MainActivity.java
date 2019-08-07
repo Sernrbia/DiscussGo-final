@@ -1,4 +1,4 @@
-package com.example.discussgo;
+package com.example.discussgo.FirstScreen.View;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -7,6 +7,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.example.discussgo.FirstScreen.View.Fragments.LoginFragment;
+import com.example.discussgo.FirstScreen.View.Fragments.RegisterFragment;
+import com.example.discussgo.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
