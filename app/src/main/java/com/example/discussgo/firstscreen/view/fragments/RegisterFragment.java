@@ -1,4 +1,4 @@
-package com.example.discussgo.FirstScreen.View.Fragments;
+package com.example.discussgo.firstscreen.view.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

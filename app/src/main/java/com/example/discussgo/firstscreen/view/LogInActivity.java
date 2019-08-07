@@ -1,4 +1,4 @@
-package com.example.discussgo.FirstScreen.View;
+package com.example.discussgo.firstscreen.view;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -7,12 +7,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.example.discussgo.FirstScreen.View.Fragments.LoginFragment;
-import com.example.discussgo.FirstScreen.View.Fragments.RegisterFragment;
+import com.example.discussgo.firstscreen.view.fragments.LoginFragment;
+import com.example.discussgo.firstscreen.view.fragments.RegisterFragment;
 import com.example.discussgo.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class LogInActivity extends AppCompatActivity {
     private Fragment selectedFragment;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener

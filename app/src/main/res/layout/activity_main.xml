@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryLight"
-    tools:context=".FirstScreen.View.MainActivity">
+    tools:context=".firstscreen.view.LogInActivity">
 
     <FrameLayout
         android:id="@+id/fragment_container"
