@@ -36,15 +36,11 @@ public class UserRepository {
 
 
     public Observable<AccessToken> signIn(final String username, final String password) {
-        return apiInterface.signIn(username, password, "androidClients", "password")
+        return apiInterface.signIn(username, password, "androidId", "password")
                 .delay(2, TimeUnit.SECONDS)
-                .map(new Function<AccessToken, AccessToken>() {
-                    @Override
-                    public AccessToken apply(AccessToken accessToken) throws Exception {
-
-                        wrapper.putAccessToken(accessToken.getAccessToken());
-                        return accessToken;
-                    }
+                .map(accessToken -> {
+                    wrapper.putAccessToken(accessToken.getAccessToken());
+                    return accessToken;
                 });
     }
 

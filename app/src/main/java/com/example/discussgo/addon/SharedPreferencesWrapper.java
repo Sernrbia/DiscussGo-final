@@ -36,4 +36,10 @@ public class SharedPreferencesWrapper {
 
 
     }
+
+    public void clearPreferences(String file) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.remove(file);
+        editor.apply();
+    }
 }

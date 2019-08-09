@@ -6,11 +6,11 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.discussgo.firstscreen.repository.UserRepository;
 import com.example.discussgo.firstscreen.viewmodel.LogInVM;
 
-public class LogInFactory implements ViewModelProvider.Factory {
+public class FirstScreenFactory implements ViewModelProvider.Factory {
 
     private final UserRepository repository;
 
-    public LogInFactory(UserRepository repository) {
+    public FirstScreenFactory(UserRepository repository) {
         this.repository = repository;
     }
 

@@ -10,10 +10,12 @@ import androidx.fragment.app.Fragment;
 import com.example.discussgo.R;
 
 public class RegisterFragment extends Fragment {
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.register_layout, container, false);
+        View view = inflater.inflate(R.layout.register_layout, container, false);
+
+        return view;
     }
 }
