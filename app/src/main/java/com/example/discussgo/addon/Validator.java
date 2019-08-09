@@ -7,4 +7,10 @@ public class Validator {
             throw new IllegalArgumentException("Field " + nameOfField + " can't be blank.");
     }
 
+    public static void checkMatch(String password, String confirmPassword) throws IllegalArgumentException {
+        if(!password.equals(confirmPassword)) {
+            throw new IllegalArgumentException("Passwords don't match!");
+        }
+    }
+
 }

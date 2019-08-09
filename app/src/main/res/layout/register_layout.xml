@@ -157,14 +157,14 @@
 
 
     <TextView
-        android:id="@+id/register_repeatPasswordTxT"
+        android:id="@+id/register_confirmPasswordTxT"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintWidth_percent="0.8"
         app:layout_constraintTop_toBottomOf="@id/register_editPasswordLayout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="@string/repeatPassword"
+        android:text="@string/confirmPassword"
         android:textSize="20sp"
         android:layout_marginTop="10dp"/>
 
@@ -172,16 +172,16 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintWidth_percent="0.8"
-        app:layout_constraintTop_toBottomOf="@id/register_repeatPasswordTxT"
+        app:layout_constraintTop_toBottomOf="@id/register_confirmPasswordTxT"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:id="@+id/register_editRepeatPasswordLayout"
+        android:id="@+id/register_editConfirmPasswordLayout"
         >
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/register_editRepeatPassword"
+            android:id="@+id/register_editConfirmPassword"
             android:singleLine="true"
             android:inputType="textPassword"
             app:layout_constraintRight_toRightOf="parent"
@@ -199,7 +199,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintWidth_percent="0.7"
-        android:id="@+id/register_btnLogin"
+        android:id="@+id/register_btnRegister"
         android:text="@string/register"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

@@ -15,7 +15,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.discussgo.R;
 import com.example.discussgo.addon.Animation;
 import com.example.discussgo.addon.SharedPreferencesWrapper;
-import com.example.discussgo.firstscreen.factory.FirstScreenFactory;
+import com.example.discussgo.firstscreen.factory.LogInFactory;
 import com.example.discussgo.firstscreen.repository.UserRepository;
 import com.example.discussgo.firstscreen.viewmodel.LogInVM;
 
@@ -36,7 +36,7 @@ public class LoginFragment extends Fragment {
 
         SharedPreferencesWrapper wrapper = SharedPreferencesWrapper.getInstance();
         UserRepository repository = UserRepository.getInstance(wrapper);
-        FirstScreenFactory factory = new FirstScreenFactory(repository);
+        LogInFactory factory = new LogInFactory(repository);
 
         viewmodel = ViewModelProviders.of(this, factory).get(LogInVM.class);
 
