@@ -1,4 +1,4 @@
-package com.example.discussgo.secondscreen;
+package com.example.discussgo.secondscreen.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,8 +14,6 @@ import androidx.annotation.NonNull;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
-
-import java.util.Objects;
 
 public class MainScreenActivity extends AppCompatActivity {
     private TextView mTextMessage;

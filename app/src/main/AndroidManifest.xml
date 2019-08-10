@@ -20,7 +20,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".secondscreen.MainScreenActivity"
+            android:name=".secondscreen.view.MainScreenActivity"
             android:label="@string/titleActivityMainScreen"></activity>
         <activity
             android:name=".firstscreen.view.LogInActivity"

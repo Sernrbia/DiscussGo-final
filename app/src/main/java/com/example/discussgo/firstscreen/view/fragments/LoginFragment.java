@@ -7,9 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -19,21 +19,20 @@ import com.example.discussgo.addon.SharedPreferencesWrapper;
 import com.example.discussgo.firstscreen.factory.LogInFactory;
 import com.example.discussgo.firstscreen.repository.UserRepository;
 import com.example.discussgo.firstscreen.viewmodel.LogInVM;
-import com.example.discussgo.secondscreen.MainScreenActivity;
+import com.example.discussgo.secondscreen.view.MainScreenActivity;
 
 import java.util.Objects;
 
 public class LoginFragment extends Fragment {
     private LogInVM viewmodel;
-    private Animation animation;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.login_layout, container, false);
         // Inflate the layout for this fragment
-        Animation animation = new Animation((ImageView) view.findViewById(R.id.main_loading));
+        Animation animation = new Animation(view.findViewById(R.id.main_loading));
 
         final EditText username = view.findViewById(R.id.main_editUsername);
         final EditText password = view.findViewById(R.id.main_editPassword);
