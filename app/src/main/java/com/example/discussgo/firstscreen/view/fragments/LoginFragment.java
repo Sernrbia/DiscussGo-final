@@ -1,5 +1,6 @@
 package com.example.discussgo.firstscreen.view.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,9 @@ import com.example.discussgo.addon.SharedPreferencesWrapper;
 import com.example.discussgo.firstscreen.factory.LogInFactory;
 import com.example.discussgo.firstscreen.repository.UserRepository;
 import com.example.discussgo.firstscreen.viewmodel.LogInVM;
+import com.example.discussgo.secondscreen.MainScreenActivity;
+
+import java.util.Objects;
 
 public class LoginFragment extends Fragment {
     private LogInVM viewmodel;
@@ -42,13 +46,18 @@ public class LoginFragment extends Fragment {
 
         String token = wrapper.getAccessToken();
         if (token != null && !token.isEmpty()) {
-            Toast.makeText(view.getContext(), "Shared upisan", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getActivity(), MainScreenActivity.class);
+            startActivity(intent);
+            Objects.requireNonNull(getActivity()).finish();
         }
 
         viewmodel.getSignInSuccessful().observe(LoginFragment.this, s -> {
             animation.stopAnimation();
             if (!s.equals("fail")) {
-                Toast.makeText(view.getContext(), "Login success!", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(view.getContext(), "Login success!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), MainScreenActivity.class);
+                startActivity(intent);
+                Objects.requireNonNull(getActivity()).finish();
             } else {
                 Toast.makeText(view.getContext(), "Login failed!", Toast.LENGTH_LONG).show();
             }

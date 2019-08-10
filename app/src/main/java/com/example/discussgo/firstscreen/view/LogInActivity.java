@@ -7,10 +7,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.example.discussgo.R;
 import com.example.discussgo.firstscreen.view.fragments.LoginFragment;
 import com.example.discussgo.firstscreen.view.fragments.RegisterFragment;
-import com.example.discussgo.R;
-import com.example.discussgo.firstscreen.viewmodel.LogInVM;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class LogInActivity extends AppCompatActivity {

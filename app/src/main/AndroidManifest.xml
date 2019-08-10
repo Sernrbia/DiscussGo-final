@@ -20,8 +20,12 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".secondscreen.MainScreenActivity"
+            android:label="@string/titleActivityMainScreen"></activity>
+        <activity
             android:name=".firstscreen.view.LogInActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.ActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
